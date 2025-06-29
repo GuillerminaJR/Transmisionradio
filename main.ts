@@ -3,13 +3,7 @@ input.onGesture(Gesture.LogoUp, function () {
     radio.sendString("Avanza")
 })
 input.onGesture(Gesture.ScreenUp, function () {
-    basic.showLeds(`
-        # # # # #
-        # . . . #
-        # . . . #
-        # . . . #
-        # # # # #
-        `)
+    basic.showIcon(IconNames.SmallDiamond)
     radio.sendString("Parar")
 })
 input.onGesture(Gesture.TiltRight, function () {
@@ -21,19 +15,12 @@ input.onGesture(Gesture.TiltLeft, function () {
     radio.sendString("Izquierda")
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
-        # # # # #
-        # . . . #
-        # . . . #
-        # . . . #
-        # # # # #
-        `)
+    basic.showIcon(IconNames.SmallDiamond)
     radio.sendString("Parar")
 })
 input.onGesture(Gesture.LogoDown, function () {
     basic.showArrow(ArrowNames.North)
     radio.sendString("Reversa")
 })
-radio.setTransmitPower(7)
 basic.showIcon(IconNames.House)
 radio.setGroup(100)
